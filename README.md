@@ -1,53 +1,28 @@
 ##
 https://svs.gsfc.nasa.gov/4720/
 
-# React + TypeScript + Vite
+# r3f-spaceman-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an interactive 3D application built with React/TypeScript and React Three Fiber.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![spaceman](https://private-user-images.githubusercontent.com/9165542/403543976-5a8ea36f-7c39-49fe-870d-cf7efda38b68.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzY5NjY2NTgsIm5iZiI6MTczNjk2NjM1OCwicGF0aCI6Ii85MTY1NTQyLzQwMzU0Mzk3Ni01YThlYTM2Zi03YzM5LTQ5ZmUtODcwZC1jZjdlZmRhMzhiNjgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDExNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAxMTVUMTgzOTE4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODQ3M2VmOTNkYjY1MmU4MGM3MTBkZDc5NjliMTFlNDIxY2Q1ZmEzNzIyZjkxYTkxZjVmMmY1M2ViOWFmMDZmZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.2w6DyAl0om_AXRd3YyfOD4M-d82fGMS6e0dg8XYPx-Q)
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+npm install
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Hit the spacebar for leva controls and click on the Spaceman to trigger an animation.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Contributing
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
+
